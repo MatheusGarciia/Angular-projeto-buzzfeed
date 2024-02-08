@@ -14,6 +14,7 @@ export class QuizzComponent implements OnInit {
 
   answers: string[] = [];
   answersSelected: string = '';
+  answersSelectedImg: string = '';
 
   questionIndex: number = 0;
   questionMaxIndex: number = 0;
@@ -51,6 +52,10 @@ export class QuizzComponent implements OnInit {
       this.answersSelected =
         quizz_questions.results[
           finalAnswer as keyof typeof quizz_questions.results
+        ];
+      this.answersSelectedImg =
+        quizz_questions.imgResults[
+          finalAnswer as keyof typeof quizz_questions.imgResults
         ];
       //verificar opção ganhadora
     }

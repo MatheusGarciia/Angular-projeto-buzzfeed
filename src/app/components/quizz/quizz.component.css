@@ -14,6 +14,7 @@
 
 .quizz_logo > h3 {
   margin-top: 20px;
+  font-size: 40px;
 }
 
 .quizz_questions {
@@ -64,7 +65,7 @@
 
 .quizz_results {
   width: 100%;
-  height: 350px;
+  height: 500px;
   background-color: rgb(33, 2, 57);
   border-radius: 10px;
   padding: 30px;
@@ -72,4 +73,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.quizz_results > p {
+  margin-bottom: 20px;
+}
+
+.quizz_results > img {
+  width: 600px;
+
+  border-radius: 8px;
+}
+
+@media (max-width: 390px) {
+  .quizz_results > img {
+    width: 100%;
+  }
+
+  .quizz_results > h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .quizz_logo > img {
+    width: 90%;
+  }
+
+  .quizz_questions > h3 {
+    text-align: center;
+  }
+
+  .quizz_logo > h3 {
+    text-align: center;
+  }
+
+  .quizz_results {
+    height: 370px;
+  }
+
+  .quizz_logo > h3 {
+    font-size: 20px;
+  }
+
+  .quizz_questions {
+    height: 150px;
+  }
 }
